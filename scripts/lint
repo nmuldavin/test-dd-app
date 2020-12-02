@@ -1,0 +1,3 @@
+#!/bin/bash
+
+eslint '**/*.{ts,js}' && prettier --check .

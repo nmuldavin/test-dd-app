@@ -1,0 +1,3 @@
+#!/bin/bash
+
+eslint --fix '**/*.{ts,js}' && prettier --write .

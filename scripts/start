@@ -1,0 +1,9 @@
+#!/bin/bash
+
+(
+  if [ -e .env.production ]
+  then
+      export $(cat .env.development | xargs)
+  fi
+  NODE_ENV=development node src/server/dev.js
+)
